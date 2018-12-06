@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`connects actions 1`] = `
+<div>
+  <span>
+    first
+  </span>
+  <span>
+    second
+  </span>
+  <span>
+    third
+  </span>
+  <span>
+    Total: 
+    3
+  </span>
+  <button
+    onClick={[Function]}
+  >
+    Add
+  </button>
+</div>
+`;
+
+exports[`connects state and selectors 1`] = `
+<div>
+  <span>
+    first
+  </span>
+  <span>
+    Total: 
+    1
+  </span>
+  <button>
+    Add
+  </button>
+</div>
+`;
