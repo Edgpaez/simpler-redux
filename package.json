@@ -1,9 +1,9 @@
 {
-  "name": "simpler-redux",
+  "name": "easy-redux-helpers",
   "version": "1.0.0",
-  "main": "dist/simpler-redux.cjs.js",
-  "module": "dist/simpler-redux.esm.js",
-  "browser": "dist/simpler-redux.umd.js",
+  "main": "dist/easy-redux-helpers.cjs.js",
+  "module": "dist/easy-redux-helpers.esm.js",
+  "browser": "dist/easy-redux-helpers.umd.js",
   "dependencies": {
     "immer": "^1.8.0",
     "react-redux": "^6.0.0"

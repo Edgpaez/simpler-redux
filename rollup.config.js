@@ -7,7 +7,7 @@ export default [
   {
     input: "src/main.js",
     output: {
-      name: "simpler-redux",
+      name: "easy-redux-helpers",
       file: pkg.browser,
       format: "umd"
     },

@@ -1,6 +1,6 @@
-# simpler-redux
+# easy-redux-helpers
 
-simpler-redux is a tiny lib that eliminates most boilerplate when:
+easy-redux-helpers is a tiny lib that eliminates most boilerplate when:
 
 - creating reducers (by leveraging [immer](https://github.com/mweststrate/immer))
 - connecting components to redux
@@ -11,7 +11,7 @@ simpler-redux is a tiny lib that eliminates most boilerplate when:
 
 ```javascript
 // in your reducers
-import { createReducer } from "simpler-redux";
+import { createReducer } from "easy-redux-helpers";
 
 const config = {
   // first set initial state
@@ -39,7 +39,7 @@ The state returned by reducers created using `createReducer` is immutable ([imme
 ```javascript
 // when connecting components to redux
 import React from "react";
-import { connect } from "simpler-redux";
+import { connect } from "easy-redux-helpers";
 
 class MyComponent extends from React.Component {
     // ...
