@@ -15,6 +15,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "jest": "^23.6.0",
+    "np": "^3.0.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-test-renderer": "^16.6.3",
@@ -29,7 +30,7 @@
     "dev": "rollup -c -w",
     "t": "jest",
     "pretest": "npm run build",
-    "publish": "yarn build && npm publish"
+    "release": "np"
   },
   "files": [
     "dist"

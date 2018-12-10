@@ -17,6 +17,9 @@ const getWithDotNotation = (object, key) => {
 
 const buildMapStateToProps = propMap => (state, componentProps) => {
   const connectedProps = {};
+  if (typeof propMap === "function") {
+    return propMap(state, componentProps);
+  }
   Object.keys(propMap).forEach(propName => {
     if (typeof propMap[propName] === "string") {
       // dot notation: state.potato.color

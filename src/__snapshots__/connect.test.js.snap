@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`can receive a callback to map state to props 1`] = `
+<div>
+  <span>
+    first
+  </span>
+  <span>
+    Total: 
+    1
+  </span>
+  <button>
+    Add
+  </button>
+</div>
+`;
+
 exports[`connects actions 1`] = `
 <div>
   <span>

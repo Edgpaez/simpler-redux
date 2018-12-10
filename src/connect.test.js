@@ -51,6 +51,22 @@ it("connects state and selectors", () => {
   expect(tree.toJSON()).toMatchSnapshot();
 });
 
+it("can receive a callback to map state to props", () => {
+  const ConnectedComponent = connect(BaseComponent).to({
+    props: state => ({
+      todos: state.todos,
+      total: state.todos.length
+    })
+  });
+
+  const tree = Renderer.create(
+    <Provider store={store}>
+      <ConnectedComponent />
+    </Provider>
+  );
+  expect(tree.toJSON()).toMatchSnapshot();
+});
+
 it("connects actions", () => {
   const ConnectedComponent = connect(BaseComponent).to({
     props: {
