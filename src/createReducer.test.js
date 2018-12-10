@@ -1,5 +1,4 @@
 import createReducer from "./createReducer";
-import produce, { setAutoFreeze } from "immer";
 
 let reducer;
 
@@ -37,4 +36,16 @@ it("handles actions and freezes", () => {
 
 it("works for unhandled actions", () => {
   expect(reducer({ counter: 1 }, { type: "POTATO" })).toEqual({ counter: 1 });
+});
+
+it("uses returned state when reducer returns", () => {
+  const r = createReducer({
+    initialState: { todos: [] },
+
+    ADD_TODO: (state, action) => ({ todos: [action.payload.text] })
+  });
+
+  expect(r({}, { type: "ADD_TODO", payload: { text: "potato" } })).toEqual({
+    todos: ["potato"]
+  });
 });

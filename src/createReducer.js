@@ -5,7 +5,9 @@ export default ({ initialState, ...reducers }) => {
     const srcReducer = reducers[action.type];
 
     return produce(state, draft => {
-      srcReducer && srcReducer(draft, action);
+      if (srcReducer) {
+        return srcReducer(draft, action);
+      }
     });
   };
 };
