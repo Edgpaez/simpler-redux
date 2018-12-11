@@ -79,10 +79,19 @@ export default connect(MyComponent).to({
 ## Install
 
 `yarn install easy-redux-helpers`
+
 or
+
 `npm install easy-redux-helpers`
 
 Chances are, you're already using `react-redux`, which this lib uses as a [peerDependency](https://yarnpkg.com/lang/en/docs/dependency-types/#toc-peerdependencies). In case you're not, you should install it too:
+
 `yarn install react-redux`
+
 or
+
 `npm install react-redux`
+
+
+## Credits
+Special thanks to [Grability](https://www.grability.com/) and the React Native team that helped in the making of this lib
