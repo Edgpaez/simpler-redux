@@ -59,7 +59,7 @@ const buildDispatchToProps = actions => dispatch => {
     connectedActions[key] = (...args) =>
       dispatch(actions[key].apply(null, args));
   });
-  return connectedActions;
+  return { actions: connectedActions };
 };
 
 export default Component => {

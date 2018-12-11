@@ -29,7 +29,9 @@ const BaseComponent = props => (
       <span key={index}>{todo}</span>
     ))}
     <span>Total: {props.total}</span>
-    <button onClick={props.onAdd}>Add</button>
+    <button onClick={props.actions ? props.actions.onAdd : undefined}>
+      Add
+    </button>
   </div>
 );
 
