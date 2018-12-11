@@ -94,4 +94,4 @@ or
 
 
 ## Credits
-Special thanks to [Grability](https://www.grability.com/) and the React Native team that helped in the making of this lib
+Special thanks to [Grability](https://www.grability.com/) and it's React Native team that helped in the making of this lib
