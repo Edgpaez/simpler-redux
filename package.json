@@ -6,7 +6,7 @@
   "browser": "dist/easy-redux-helpers.umd.js",
   "dependencies": {
     "@types/react": "^16.7.13",
-    "immer": "^1.8.0"
+    "immer": "^8.0.1"
   },
   "peerDependencies": {
     "react-redux": "^6.0.0"
